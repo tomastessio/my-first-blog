@@ -8,14 +8,14 @@
 </head>
 <body>
     <div>
-        <h1><a href="/">Django Girls Blog</a></h1>
+        <h1><a href="/">Bienvenidos al blog de Tomas</a></h1>
     </div>
     
-    {% for post in posts %}
+    {%for post in posts%}
         <div>
-            <p> publicado: {{ post.published_date }}</p>
-            <h2><a href="">{{ post.title }}</a></h2>
-            <p>{{ post.text|linebreaks }}</p>
+            <p> publicado: {{post.published_date}}</p>
+            <h2><a href="">{{post.title}}</a></h2>
+            <p>{{post.text|linebreaks}}</p>
         </div>
     {% endfor %}
 </body>
